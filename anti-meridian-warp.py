@@ -8,8 +8,7 @@ from osgeo import gdal
 import os
 import sys
 
-# gdalwarp -s_srs EPSG:2193 -t_srs EPSG:3857 nzbathy_250m_nztm.tif nzbathy_250m_webmer.tif
-
+## Example command:
 # python3 project-across-meridian.py data/nzbathy_250m_nztm.tif
 
 # World circumfrence in meters
