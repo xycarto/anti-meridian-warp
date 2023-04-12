@@ -23,13 +23,7 @@ def main(in_file):
     wgs_anti_extent = wgs_poly(anti_minx, anti_maxx, wgs_extent)
     webmer_anti_extent = webmer_shift(wgs_anti_extent)
     
-    print(webmer_anti_extent.total_bounds)
-    
     # Reproject
-    # print("Warping to Web Mecator...")
-    # rio_in = rioxarray.open_rasterio(in_file, decode_coords="all")
-    # repro = rio_in.rio.reproject('epsg:3857', inplace=True)
-    # repro.rio.to_raster("data/rio.tif")
     gdal.Warp(
         "data/niwa_250_webmer.tif",
         in_file,
