@@ -1,4 +1,4 @@
-# anti-meridian-warp
+# Anti-Meridian Warp
 
 Python method for warping GTiff in **NZTM** to **Web Mercator** across the anti-meridian.
 
