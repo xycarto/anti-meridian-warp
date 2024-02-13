@@ -2,6 +2,8 @@
 
 Python method for warping GTiff in **NZTM** to **Web Mercator** across the anti-meridian.
 
+Tested additonally warping from **EPSG:3994, EPSG 4167**
+
 ## Summary
 
 A direct warp from NZTM to Web Mercator will split the file across the globe.  This method will create a non-split GTiff extending across the anti-meridian.
