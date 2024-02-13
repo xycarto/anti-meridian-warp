@@ -83,7 +83,7 @@ def webmer_shift(wgs_anti_extent):
 
     ## Build new Webmer Poly over Anti-Meridian
     webmer_anti_poly = box(shift_minx, webmer_anti.total_bounds[1], shift_maxx, webmer_anti.total_bounds[3])
-    webmer_anti_extent = gp.GeoDataFrame(index=[0], crs = "epsg:3857", geometry=[webmer_anti_poly])
+    webmer_anti_extent = gp.GeoDataFrame(index=[0], crs=WEBMER, geometry=[webmer_anti_poly])
     
     return webmer_anti_extent 
 
